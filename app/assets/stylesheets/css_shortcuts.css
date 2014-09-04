@@ -1,0 +1,36 @@
+/* Cross browser compatibility */
+
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+
+div {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/* CSS snippet tools */
+
+.center { text-align: center;}
+
+.right { text-align: right;}
+
+.left { text-align: left;}
+
+.justify { text-align: justify;}
+
+.float-left { float: left;}
+
+.float-right {  float: right;}
+
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}

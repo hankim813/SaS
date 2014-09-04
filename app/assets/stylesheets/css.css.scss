@@ -1,1 +1,259 @@
 @import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import url(http://fonts.googleapis.com/css?family=Cinzel);
+@import url(http://fonts.googleapis.com/css?family=Abel);
+@import url(http://fonts.googleapis.com/css?family=Nunito:300);
+
+
+/* CHANGE FONTS!! and ALL SHADES OF COLOR */
+
+/* Uniform Uses */
+
+.green {
+  color: #03aa67;
+  font-weight: bold;
+}
+
+/* Navigation Bar */
+
+header {
+  width: 100%;
+  height: 105px;
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  border: 1px solid #dcdcdc;
+}
+
+header .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1266px;
+}
+
+#logo {
+  float: left;
+  max-width: 300px;
+  height: 115px;
+  padding-top: 20px;
+}
+
+#logo h1 {
+  font-family: 'Cinzel', serif;
+  color: #706f70;
+  font-size: 17px;
+}
+
+#navigation {
+  float: right;
+  max-width: 600px;
+  text-align: right;
+}
+
+#navigation a {
+  color: inherit;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+}
+
+#navigation a:hover {
+  color: #03aa67;
+  text-decoration: none;
+}
+
+#navigation ul {
+  list-style: none;
+  padding-top: 40px;
+}
+
+#navigation ul li {
+  display: inline;
+  padding: 5px;
+  margin: 10px;
+  color: #7a7a7a;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Abel', sans-serif;
+}
+
+/* Jumbotron */
+#jumbotron-container {
+  width: 100%;
+  height: 485px;
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+#jumbotron-container:before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 485px;
+  background-image: url('skyscrapers.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+#headline {
+  width: 55%;
+  height: 300px;
+  margin: 130px auto 0 auto;
+  position: relative;
+  z-index: 50;
+}
+
+#headline h1 {
+ color: #FFF;
+ text-transform: uppercase;
+ text-align: center;
+ letter-spacing: 3px;
+ line-height: 1.5em;
+}
+
+#headline p {
+  color: #FFF;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.5em;
+  font-family: 'Nunito', sans-serif;
+}
+
+#cta {
+  background-color: #00b86e;
+  width: 225px;
+  height: 50px;
+  padding: 15px 40px;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#cta:hover {
+  background-color: #00a663;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+}
+
+#cta a {
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Services */
+
+#services-container {
+  width: 80%;
+  height: 600px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+#services-header {
+  text-align: center;
+}
+
+#services-header h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 35px;
+  position: relative;
+  top: -10px;
+  color: #323232;
+}
+
+.services-section {
+  margin-top: 50px;
+}
+
+.service-description-container {
+  width: 60%;
+  float: left;
+  padding-right: 15px;
+}
+
+.services-section h2 {
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #323232;
+}
+
+.services-section p {
+  color: #7a7a7a;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5em;
+  font-size: 15px;
+}
+
+.service-highlights-container {
+  width: 35%;
+  margin-top: 20px;
+  float: right;
+}
+
+.service-highlights-container h3 {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: 1px solid #DEDEDE;
+  font-size: 16px;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.service-highlights-container ul {
+  padding: 25px 30px;
+  list-style: none;
+  border: 1px solid #DEDEDE;
+  border-top: none;
+  margin: 0;
+}
+
+.service-highlights-container li {
+  line-height: 2em;
+  color: #7a7a7a;
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  display: inline;
+  margin-left: 15px;
+}
+
+.service-navi-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  position: relative;
+  top: 70px;
+}
+
+.nav-button {
+  background-color: #00b86e;
+  width: 225px;
+  height: 50px;
+  padding: 15px 40px;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 10px;
+  display: inline;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Abel', sans-serif;
+}
+
+.nav-button:hover {
+  background-color: #00a663;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+}

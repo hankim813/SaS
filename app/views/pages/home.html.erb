@@ -1,2 +1,41 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div id="jumbotron-container">
+  <div id="headline">
+    <h1>We are a <span class="green">consulting</span> firm that turns your problems into <span class="green">opportunities</span>.</h1>
+    <p>As Synthesis Advisory Services, our number one priority is to cultivate our client relationships. You are important to us. Together we will elevate your business onto newer heights. </p>
+    <br>
+    <div id="cta">
+      <%= link_to "Let's Get Started", href: "#" %>
+    </div>
+  </div><!-- Tagline -->
+</div> <!-- Homepage Image Container -->
+
+<main id="services-container">
+  <div id="services-header">
+    <%= image_tag "synthesis-logo.png", alt: "Synthesis Advisory Services, Ltd. Nairobi, Kenya" %>
+    <h1>Services</h1>
+  </div>
+  <section class="services-section">
+    <div class="service-description-container">
+      <h2><%= icon('pie-chart', '', class: "green") %> Corporate & Project Finance</h2>
+      <br>
+      <p>We provide top notch reports on your business's financial feasibility through indepth critical analyses and modelling. We offer detailed and cyrstal clear business valuations as well as comprehensive project appraisals.
+        <br><br>
+      Without understanding the monetary worth and potential behind your ventures, it can be hard to establish your leverage in future business negotiations. Let us take care of that for you so you can start owning every business meeting.</p>
+    </div> <!-- Description Container -->
+    <div class="service-highlights-container clear">
+      <h3>Service Highlights</h3>
+      <ul>
+        <%= icon('check-square','', class: 'green') %><li>Mathematical modelling based analyses</li>
+        <br>
+        <%= icon('check-square','', class: 'green') %><li>Comprehensive and easy-to-follow appraisals</li>
+        <br>
+        <%= icon('check-square','', class: 'green') %><li>Expert staff with years of experience</li>
+        <br>
+        <%= icon('check-square','', class: 'green') %><li>Gain leverage by understanding your business</li>
+      </ul> <!-- Service Highlight List  -->
+    </div> <!-- Service Highlight Box -->
+    <div class="service-navi-container">
+      <div class="nav-button">Previous</div><div class="nav-button">Next</div>
+    </div> <!-- Service Toggle Buttons Container -->
+  </section><!-- Service Section #1 -->
+</main> <!-- Main Content, Services Wrapper -->
