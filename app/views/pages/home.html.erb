@@ -17,11 +17,11 @@
     <li id="3a">Start-up Advisory Services | Start™</li>
   </ul>
 </div>
-
+<div id="services-anchor"></div>
 <main id="services-container">
   <div id="services-header">
-    <%= image_tag "synthesis-logo.png", alt: "Synthesis Advisory Services, Ltd. Nairobi, Kenya" %>
-    <h1 id="services">Services</h1>
+    <%= image_tag "synthesis-logo.png", alt: "Synthesis Advisory Services, Ltd. Nairobi, Kenya", id: "services" %>
+    <h1>Services</h1>
   </div>
   <!-- Corporate & Project Finance -->
   <section class="services-section" id="1">
@@ -100,9 +100,10 @@
 </main> <!-- Main Content for Services Wrapper -->
 
 <!-- Clients -->
+<div id="clients-anchor"></div>
 <main id="clients-background">
   <section id="clients-container">
-    <h1 id="clients">Our Clients</h1>
+    <h1>Our Clients</h1>
     <h2><%= icon('angle-double-down', '', class: "green") %></h2>
     <br><br>
     <div id="clientbox-container">
@@ -120,8 +121,8 @@
 </main><!-- Main Content for Clients -->
 
 <!-- Staff -->
-
-<main id="staff-background">
+<div id="staff-anchor"></div>
+<main id="staff-background clear">
   <section id="staff-container">
     <div id="staff-header">
       <%= image_tag "synthesis-logo.png", alt: "Synthesis Advisory Services, Ltd. Nairobi, Kenya" %>
@@ -141,7 +142,44 @@
         <span style="color: #00a663;">lamusia@synthesisadvisory.com</span>
       </p>
     </div><!-- Lamusia Anzaya -->
+
     <hr>
 
+    <div class="employee">
+      <%= image_tag 'LamusiaAnzaya.jpg', alt: "Lamusia Anzaya, Co-Founder & Lead Financial Consultant", style: "float: right" %>
+      <h2>Lamusia Anzaya</h2>
+      <h3>Co-Founder & Lead Financial Consultant</h3>
+      <br>
+      <p>Lamusia has professional and academic exposure within the South-Pacific, European and African markets, he brings to the SIM team experience initiating and supporting the growth of businesses across the FMCG, QSR, Logistics, Property, Financial Services and Online sectors. Lamusia has passed Level II of the Chartered Financial Analyst CFA® Program and holds a BBA in Operations & Management from the Hong Kong University of Science and Technology.
+        <br><br>
+      Lamusia has an unwavering passion for frontier markets that create long-term sustainable value to all stakeholders.
+        <br>
+        <span style="color: #00a663;">lamusia@synthesisadvisory.com</span>
+      </p>
+    </div><!-- Lamusia Anzaya -->
   </section><!-- Wraps the Clients Content -->
-</div><!-- Main Content for Staff -->
+</main><!-- Main Content for Staff -->
+
+<!-- Contact Us -->
+<div id="contact-anchor"></div>
+<div id="contact-background">
+    <div id="contact-header">
+      <%= image_tag "synthesis-logo.png", alt: "Synthesis Advisory Services, Ltd. Nairobi, Kenya" %>
+      <h1><span style="border-bottom: 1px solid #03aa67;">Let's get started</span></h1>
+      <p>Call us today and elevate your business.</p>
+    </div>
+  <div id="contact-container">
+    <p>
+      Synthesis Advisory Services Ltd.<br>
+      2nd Floor Wing C, Karen Plains Arcade,<br>
+      Karen Plains Road,<br>
+      P.O. BOX 15266, 00509<br>
+      Nairobi, Kenya
+    </p>
+    <p>
+      <span style="color: #00a663;">serve@synthesisadvisory.com</span>
+    </p>
+  </div><!-- Wraps the Contact Content -->
+</div><!-- Main Content for Contact -->
+
+<%= render 'layouts/footer' %>

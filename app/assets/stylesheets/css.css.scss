@@ -34,14 +34,14 @@ header .wrapper {
   max-width: 1266px;
 }
 
-#logo {
+.logo {
   float: left;
   max-width: 300px;
   height: 115px;
   padding-top: 20px;
 }
 
-#logo h1 {
+.logo h1 {
   font-family: 'Cinzel', serif;
   color: #706f70;
   font-size: 17px;
@@ -195,7 +195,7 @@ header .wrapper {
   width: 80%;
   height: 600px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 #services-header {
@@ -212,7 +212,7 @@ header .wrapper {
 }
 
 .services-section {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .service-description-container {
@@ -312,7 +312,7 @@ header .wrapper {
 #clients-container {
   width: 80%;
   margin: 0 auto;
-  padding: 5% 0;
+  padding: 4% 0;
 }
 
 #clients-container h1, #clients-container h2 {
@@ -354,6 +354,7 @@ header .wrapper {
 
 #staff-header {
   text-align: center;
+  padding-top: 40px;
 }
 
 #staff-header h1 {
@@ -386,11 +387,11 @@ header .wrapper {
 #staff-container {
   width: 80%;
   margin: 0 auto;
-  padding: 5% 0;
+  padding: 30px 0;
 }
 
 .employee {
-  margin: 100px 0 100px 0;
+  margin: 90px 0 100px 0;
   text-align: left;
   padding: 0;
 }
@@ -417,4 +418,117 @@ header .wrapper {
 
 .employee p {
   line-height: 1.6em;
+}
+
+/* Clients */
+
+#contact-background {
+  width: 100%;
+  height: 560px;
+  overflow: hidden;
+}
+
+#contact-background:before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 560px;
+  background-image: url('skyscrapers.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10;
+  box-shadow: 1px 1px 1px inherit;
+}
+
+#contact-header {
+  text-align: center;
+  position: relative;
+  z-index: 50;
+  padding-top: 50px;
+}
+
+#contact-header h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 40px;
+  position: relative;
+  top: -10px;
+  color: #FFF;
+}
+
+#contact-header p {
+  color: #F2F2F2;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5em;
+  font-size: 15px;
+  width: 65%;
+  margin: 0 auto;
+  position: relative;
+  top: -10px;
+}
+
+#contact-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+#contact-container p {
+  padding-top: 30px;
+  color: #F2F2F2;
+  font-family: 'Abel', sans-serif;
+  line-height: 1.5em;
+  font-size: 20px;
+  width: 65%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 50;
+  text-align: center;
+}
+
+/* Footer */
+
+#footer-background {
+  background-color: #323232;
+  width: 100%;
+  margin: 0;
+  height: 80px;
+  position: absolute;
+}
+
+#footer-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+}
+
+#footer-container p {
+  color: #E6E6E6;
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+/* Anchor Links */
+
+#services-anchor {
+  position: relative;
+  top: -90px;
+}
+
+#clients-anchor {
+  position: relative;
+  top: -90px;
+}
+
+#staff-anchor {
+  position: relative;
+  top: -90px;
+}
+
+#contact-anchor {
+  position: relative;
+  top: -90px;
 }
