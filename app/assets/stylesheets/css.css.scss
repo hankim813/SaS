@@ -205,7 +205,7 @@ header .wrapper {
 #services-header h1 {
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 35px;
+  font-size: 40px;
   position: relative;
   top: -10px;
   color: #323232;
@@ -318,8 +318,9 @@ header .wrapper {
 #clients-container h1, #clients-container h2 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 40px;
   color: #323232;
+  letter-spacing: 5px;
 }
 
 #clientbox-container {
@@ -347,4 +348,73 @@ header .wrapper {
 .clientbox img:hover {
   opacity: 1;
   transition: all 0.2s ease-out;
+}
+
+/* Staff */
+
+#staff-header {
+  text-align: center;
+}
+
+#staff-header h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 40px;
+  position: relative;
+  top: -10px;
+  color: #323232;
+}
+
+#staff-header p {
+  color: #7a7a7a;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5em;
+  font-size: 15px;
+  width: 65%;
+  margin: 0 auto;
+  position: relative;
+  top: -10px;
+}
+
+#staff-background {
+  background-color: #FFF;
+  width: 100%;
+  margin: 0;
+  height: 600px;
+}
+
+#staff-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+.employee {
+  margin: 100px 0 100px 0;
+  text-align: left;
+  padding: 0;
+}
+
+.employee img {
+  float: left;
+  display: inline;
+  margin-right: 3%;
+  width: 250px;
+}
+
+.employee h2 {
+  text-transform: uppercase;
+  line-height: 0.7em;
+  font-size: 35px;
+}
+
+.employee h3 {
+  text-transform: uppercase;
+  font-family: 'Abel', sans-serif;
+  line-height: 0.7em;
+  color: #00a663;
+}
+
+.employee p {
+  line-height: 1.6em;
 }
