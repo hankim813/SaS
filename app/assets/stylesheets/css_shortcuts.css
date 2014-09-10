@@ -25,12 +25,19 @@ div {
 
 .float-right {  float: right;}
 
-.clear:before,
-.clear:after {
+.clear:before, .clear:after {
     content: " ";
     display: table;
 }
 
 .clear:after {
     clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
 }

@@ -9,12 +9,22 @@
   </div><!-- Tagline -->
 </div> <!-- Homepage Image Container -->
 
+<div id="service-nav"></div>
+<div id="service-nav-container">
+  <ul>
+    <li class="active" id="1a">Corporate & Project Finance</li>
+    <li id="2a">Business Strategy</li>
+    <li id="3a">Start-up Advisory Services | Start™</li>
+  </ul>
+</div>
+
 <main id="services-container">
   <div id="services-header">
     <%= image_tag "synthesis-logo.png", alt: "Synthesis Advisory Services, Ltd. Nairobi, Kenya" %>
-    <h1>Services</h1>
+    <h1 id="services">Services</h1>
   </div>
-  <section class="services-section">
+  <!-- Corporate & Project Finance -->
+  <section class="services-section" id="1">
     <div class="service-description-container">
       <h2><%= icon('pie-chart', '', class: "green") %> Corporate & Project Finance</h2>
       <br>
@@ -34,8 +44,77 @@
         <%= icon('check-square','', class: 'green') %><li>Gain leverage by understanding your business</li>
       </ul> <!-- Service Highlight List  -->
     </div> <!-- Service Highlight Box -->
-    <div class="service-navi-container">
-      <div class="nav-button">Previous</div><div class="nav-button">Next</div>
-    </div> <!-- Service Toggle Buttons Container -->
   </section><!-- Service Section #1 -->
-</main> <!-- Main Content, Services Wrapper -->
+
+  <!-- Business Strategy -->
+  <section class="services-section hide" id="2">
+    <div class="service-description-container">
+      <h2><%= icon('line-chart', '', class: "green") %> Business Strategy</h2>
+      <br>
+      <p>An idea without a plan is nothing but just a day dream. An idea with a strategy on the other hand, becomes a goal. Let us help you formulate the best plan that your business can execute to unlock its maximum potential.
+        <br><br>
+      With comprehensive sectorial research and industry analyses, we provide meticulous business and strategic planning.</p>
+      <br><br>
+    </div> <!-- Description Container -->
+    <div class="service-highlights-container clear">
+      <h3>Service Highlights</h3>
+      <ul>
+        <%= icon('check-square','', class: 'green') %><li>Sectorial Research</li>
+        <br>
+        <%= icon('check-square','', class: 'green') %><li>Business & Strategic Planning</li>
+        <br>
+        <%= icon('check-square','', class: 'green') %><li>Dedicated Business Development Advisory</li>
+        <br>
+        <%= icon('check-square','', class: 'green') %><li>Hundreds of Case Studies</li>
+      </ul> <!-- Service Highlight List  -->
+    </div> <!-- Service Highlight Box -->
+  </section><!-- Service Section #2 -->
+
+  <!-- Start-up Advisory Services-->
+  <section class="services-section hide" id="3">
+    <div class="service-description-container">
+      <h2><%= icon('paper-plane', '', class: "green") %> Start-up Advisory Services | Start™</h2>
+      <br>
+      <p>Whether you are a seasoned veteran or a first-timer when it comes to creating businesses, everyone could always use some help. We can help you understand the complicated laws and regulations and all the boring stuff, so that you can focus on the fun things behind creating a business.
+        <br><br>
+      We have a staff with years of experience that can provide strategic opportunity evaluation, administrative, regulatory, compliance, strategic, financial and operational advisory.</p>
+      <br><br>
+    </div> <!-- Description Container -->
+    <div class="service-highlights-container clear">
+      <h3>Service Highlights</h3>
+      <ul>
+        <%= icon('check-square','', class: 'green') %><li>Comprehensive Opportunity Valuation</li>
+        <br>
+        <%= icon('check-square','', class: 'green') %><li>Administrative, Regulatory & Compliance</li>
+        <br>
+        <%= icon('check-square','', class: 'green') %><li>Strategic, Financial & Operational Advisory</li>
+        <br>
+        <%= icon('check-square','', class: 'green') %><li>Valuation & Capital Sourcing</li>
+      </ul> <!-- Service Highlight List  -->
+    </div> <!-- Service Highlight Box -->
+  </section><!-- Service Section #3 -->
+
+    <div class="service-navi-container">
+      <div class="nav-button", id="corporate">1</div><div class="nav-button", id="business">2</div><div class="nav-button", id="startup">3</div>
+    </div> <!-- Service Toggle Buttons Container -->
+</main> <!-- Main Content for Services Wrapper -->
+
+<!-- Clients -->
+<main id="clients-background">
+  <section id="clients-container">
+    <h1>Our Clients</h1>
+    <h2><%= icon('angle-double-down', '', class: "green") %></h2>
+    <br><br>
+    <div id="clientbox-container">
+      <div class="clientbox">
+        <%= image_tag "kfc.png", alt: "KFC East Africa" %>
+      </div>
+      <div class="clientbox">
+        <%= image_tag "kfc.png", alt: "KFC East Africa" %>
+      </div>
+      <div class="clientbox">
+        <%= image_tag "kfc.png", alt: "KFC East Africa" %>
+      </div>
+    </div>
+  </section> <!-- Wraps the Clients Content -->
+</main><!-- Main Content for Clients -->
