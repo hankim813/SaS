@@ -131,16 +131,6 @@ header .wrapper {
   font-family: 'Nunito', sans-serif;
 }
 
-#cta {
-  background-color: #00b86e;
-  width: 225px;
-  height: 50px;
-  padding: 15px 40px;
-  overflow: hidden;
-  text-align: center;
-  margin: 0 auto;
-}
-
 #cta:hover {
   background-color: #00a663;
   cursor: pointer;
@@ -149,12 +139,16 @@ header .wrapper {
   -moz-transition: all 0.2s ease-out;
 }
 
-#cta a {
+#cta {
   text-decoration: none;
   color: #FFF;
   text-transform: uppercase;
   font-family: 'Abel', sans-serif;
   letter-spacing: 2px;
+  text-align: center;
+  background-color: #00b86e;
+  padding: 15px 40px;
+  margin: 10px 0;
 }
 
 /* Services */
