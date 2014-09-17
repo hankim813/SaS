@@ -11,8 +11,12 @@
 /* Uniform Uses */
 
 .green {
-  color: #03aa67;
+  color: #03aa67 !important;
   font-weight: bold;
+}
+
+.active {
+  color: #03AA67 !important;
 }
 
 /* Navigation Bar */
@@ -83,7 +87,7 @@ header .wrapper {
 /* Jumbotron */
 #jumbotron-container {
   width: 100%;
-  height: 485px;
+  height: 650px;
   margin-top: 100px;
   overflow: hidden;
 }
@@ -92,7 +96,7 @@ header .wrapper {
   content: " ";
   position: absolute;
   width: 100%;
-  height: 485px;
+  height: 650px;
   background-image: url('nairobi-skyline.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -102,7 +106,7 @@ header .wrapper {
 #headline {
   width: 55%;
   height: 300px;
-  margin: 130px auto 0 auto;
+  margin: 150px auto 0 auto;
   position: relative;
   z-index: 50;
 }
@@ -347,7 +351,7 @@ header .wrapper {
 }
 
 span.client-content {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.6);
   color: white;
   cursor: pointer;
   height: 250px;
