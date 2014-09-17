@@ -23,7 +23,7 @@ header {
   background-color: #FFF;
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 10000;
   border: 1px solid #dcdcdc;
 }
 
@@ -482,7 +482,7 @@ span.client-content i {
   position: absolute;
   width: 100%;
   height: 560px;
-  background-image: url('skyscrapers.jpg');
+  background-image: url('nairobi-skyline.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 10;
