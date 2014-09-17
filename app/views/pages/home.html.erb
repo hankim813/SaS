@@ -1,10 +1,11 @@
+<div id="top"></div>
 <div id="jumbotron-container">
   <div id="headline">
     <h1>We are a <span class="green">consulting</span> firm that turns your problems into <span class="green">opportunities</span>.</h1>
     <p>As Synthesis Advisory Services, our number one priority is to cultivate our client relationships. You are important to us. Together we will elevate your business onto newer heights. </p>
     <br>
     <div id="cta">
-      <%= link_to "Let's Get Started", anchor: "contact" %>
+      <%= link_to "Let's Get Started", anchor: "contact-anchor" %>
     </div>
   </div><!-- Tagline -->
 </div> <!-- Homepage Image Container -->
@@ -31,6 +32,7 @@
       <p>We provide top notch reports on your business's financial feasibility through indepth critical analyses and modelling. We offer detailed and cyrstal clear business valuations as well as comprehensive project appraisals.
         <br><br>
       Without understanding the monetary worth and potential behind your ventures, it can be hard to establish your leverage in future business negotiations. Let us take care of that for you so you can start owning every business meeting.</p>
+      <br>
     </div> <!-- Description Container -->
     <div class="service-highlights-container clear">
       <h3>Service Highlights</h3>
@@ -109,12 +111,36 @@
     <div id="clientbox-container">
       <div class="clientbox">
         <%= image_tag "kfc.png", alt: "KFC East Africa" %>
+        <span class="client-content">
+          <h3>KFC Franchisee East Africa</h3>
+          <ul>
+            <li><%= icon('check','') %> Business & Strategic Planning</li>
+            <li><%= icon('check','') %> Financial Analysis, Modelling & Forecasting</li>
+            <li><%= icon('check','') %> Business Evaluation</li>
+          </ul>
+        </span>
       </div>
       <div class="clientbox">
         <%= image_tag "kfc.png", alt: "KFC East Africa" %>
+        <span class="client-content">
+          <h3>KFC Franchisee East Africa</h3>
+          <ul>
+            <li><%= icon('check','') %> Business & Strategic Planning</li>
+            <li><%= icon('check','') %> Financial Analysis, Modelling & Forecasting</li>
+            <li><%= icon('check','') %> Business Evaluation</li>
+          </ul>
+        </span>
       </div>
       <div class="clientbox">
         <%= image_tag "kfc.png", alt: "KFC East Africa" %>
+        <span class="client-content">
+          <h3>KFC Franchisee East Africa</h3>
+          <ul>
+            <li><%= icon('check','') %> Business & Strategic Planning</li>
+            <li><%= icon('check','') %> Financial Analysis, Modelling & Forecasting</li>
+            <li><%= icon('check','') %> Business Evaluation</li>
+          </ul>
+        </span>
       </div>
     </div><!-- Wraps the Clientboxes -->
   </section> <!-- Wraps the Clients Content -->
@@ -126,7 +152,7 @@
   <section id="staff-container">
     <div id="staff-header">
       <%= image_tag "synthesis-logo.png", alt: "Synthesis Advisory Services, Ltd. Nairobi, Kenya" %>
-      <h1>The Staff</h1>
+      <h1>The Team</h1>
       <p>The heartbeat behind our firm here in Nairobi is the undying passion for consulting and helping others achieve success. Whether we are working with individuals, small businesses, or big corporations, our mission behind cultivating personal client relationships will never flicker. We love what we do.</p>
     </div>
 

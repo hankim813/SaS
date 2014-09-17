@@ -67,7 +67,7 @@ header .wrapper {
 
 #navigation ul {
   list-style: none;
-  padding-top: 40px;
+  padding-top: 63px;
 }
 
 #navigation ul li {
@@ -93,7 +93,7 @@ header .wrapper {
   position: absolute;
   width: 100%;
   height: 485px;
-  background-image: url('skyscrapers.jpg');
+  background-image: url('nairobi-skyline.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 10;
@@ -193,7 +193,7 @@ header .wrapper {
 
 #services-container {
   width: 80%;
-  height: 600px;
+  height: 650px;
   margin: 0 auto;
   padding-top: 50px;
 }
@@ -307,6 +307,8 @@ header .wrapper {
   width: 100%;
   margin: 0;
   height: 600px;
+  border-top: 2px solid #03aa67;
+  border-bottom: 2px solid #03aa67;
 }
 
 #clients-container {
@@ -336,6 +338,53 @@ header .wrapper {
   display: inline-block;
   padding: 0;
   float: center;
+  position: relative;
+  z-index: 100;
+}
+
+.clientbox:hover span.client-content {
+  opacity: 1;
+}
+
+span.client-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  padding: 10% 0;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+span.client-content h3 {
+  padding: 0 15px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+span.client-content ul {
+  list-style: none;
+  text-align: left;
+  padding: 0 15px;
+}
+
+span.client-content li {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+span.client-content i {
+  color: #03aa67;
+  font-size: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .clientbox img {
@@ -532,3 +581,7 @@ header .wrapper {
   position: relative;
   top: -90px;
 }
+ #top {
+  position: relative;
+  top: -90px;
+ }
