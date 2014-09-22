@@ -1,12 +1,12 @@
 <div id="top"></div>
-<div id="jumbotron-container">
+<main class="jumbotron-container" id="jumbotron-anchor">
   <div id="headline">
     <h1>"Ideas are <span class="green">tangible</span>, problems are <span class="green">opportunities</span>, success takes <span class="green">synthesis</span>."</h1>
     <p>As Synthesis Advisory Services, our number one priority is to cultivate our client relationships. You are important to us. Together we will elevate your business onto newer heights. </p>
     <br>
     <div class="center"><a href="#contact-anchor", id="cta">Let's Get Started</a></div>
   </div><!-- Tagline -->
-</div> <!-- Homepage Image Container -->
+</main> <!-- Homepage Image Container -->
 
 <div id="service-nav"></div>
 <div id="service-nav-container">
@@ -16,15 +16,15 @@
     <li id="3a">Start-up Advisory Services | Start™</li>
   </ul>
 </div>
-<div id="services-anchor"></div>
 
-<main id="services-container">
+
+<main class="services-container" id="services-anchor">
   <div id="services-header">
     <%= image_tag "synthesis-logo.png", alt: "Synthesis Advisory Services, Ltd. Nairobi, Kenya", id: "services" %>
     <h1>Services</h1>
   </div>
   <!-- Corporate & Project Finance -->
-  <section class="services-section" id="1">
+  <section class="services-section" id="sec-corp">
     <div class="service-description-container">
       <h2><%= icon('pie-chart', '', class: "green") %> Corporate & Project Finance</h2>
       <br>
@@ -48,7 +48,7 @@
   </section><!-- Service Section #1 -->
 
   <!-- Business Strategy -->
-  <section class="services-section hide" id="2">
+  <section class="services-section hide" id="sec-business">
     <div class="service-description-container">
       <h2><%= icon('line-chart', '', class: "green") %> Business Strategy</h2>
       <br>
@@ -72,7 +72,7 @@
   </section><!-- Service Section #2 -->
 
   <!-- Start-up Advisory Services-->
-  <section class="services-section hide" id="3">
+  <section class="services-section hide" id="sec-startup">
     <div class="service-description-container">
       <h2><%= icon('paper-plane', '', class: "green") %> Start-up Advisory Services | Start™</h2>
       <br>
@@ -101,8 +101,8 @@
 </main> <!-- Main Content for Services Wrapper -->
 
 <!-- Staff -->
-<div id="about-anchor"></div>
-<main id="about-background">
+<!-- <div id="about-anchor"></div> -->
+<main class="about-background" id="about-anchor">
   <section id="about-container">
     <div id="staff-header">
       <%= image_tag "synthesis-logo.png", alt: "Synthesis Advisory Services, Ltd. Nairobi, Kenya" %>
@@ -159,8 +159,8 @@
 </main><!-- Main Content for About -->
 
 <!-- Clients -->
-<div id="clients-anchor"></div>
-<main id="clients-background">
+<!-- <div id="clients-anchor"></div> -->
+<main class="clients-background" id="clients-anchor">
   <section id="clients-container">
     <h1>Our Clients</h1>
     <h2><%= icon('angle-double-down', '', class: "green") %></h2>
@@ -237,8 +237,8 @@
 </main><!-- Main Content for Clients -->
 
 <!-- Contact Us -->
-<div id="contact-anchor"></div>
-<main id="contact-background">
+<!-- <div id="contact-anchor"></div> -->
+<main class="contact-background" id="contact-anchor">
     <div id="contact-header">
       <%= image_tag "synthesis-logo.png", alt: "Synthesis Advisory Services, Ltd. Nairobi, Kenya" %>
       <h1><span style="border-bottom: 1px solid #03aa67;">Let's get started</span></h1>
@@ -257,5 +257,38 @@
     </p>
   </div><!-- Wraps the Contact Content -->
 </main><!-- Main Content for Contact -->
-
 <%= render 'layouts/footer' %>
+
+<script>
+  var sections = $('main')
+    , nav = $('nav')
+    , nav_height = 105;
+
+  $(window).on('scroll', function () {
+    var cur_pos = $(this).scrollTop() + 15;
+
+    sections.each(function() {
+      var top = $(this).offset().top - nav_height,
+          bottom = top + $(this).outerHeight();
+
+      if (cur_pos >= top && cur_pos <= bottom) {
+        nav.find('a').removeClass('active');
+        sections.removeClass('active');
+
+        // $(this).addClass('active');
+        nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+      }
+    });
+  });
+
+  nav.find('a').on('click', function () {
+    var $el = $(this)
+      , id = $el.attr('href');
+
+    $('html, body').animate({
+      scrollTop: $(id).offset().top - nav_height
+    }, 500);
+
+    return false;
+  });
+  </script>

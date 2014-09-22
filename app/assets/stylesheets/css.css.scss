@@ -1,23 +1,12 @@
 @import 'bootstrap';
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import url(http://fonts.googleapis.com/css?family=Cinzel);
-@import url(http://fonts.googleapis.com/css?family=Abel);
-@import url(http://fonts.googleapis.com/css?family=Nunito:300);
-@import url(http://fonts.googleapis.com/css?family=Courgette);
-
-
-/* CHANGE FONTS!! and ALL SHADES OF COLOR */
 
 /* Uniform Uses */
 
 .green {
   color: #03aa67 !important;
   font-weight: bold;
-}
-
-.active {
-  color: #03AA67 !important;
 }
 
 /* Navigation Bar */
@@ -87,17 +76,18 @@ header .wrapper {
   font-size: 16px;
   text-transform: uppercase;
   font-family: 'Abel', sans-serif;
+  letter-spacing: 1px;
 }
 
 /* Jumbotron */
-#jumbotron-container {
+.jumbotron-container {
   width: 100%;
   height: 650px;
   margin-top: 100px;
   overflow: hidden;
 }
 
-#jumbotron-container:before {
+.jumbotron-container:before {
   content: " ";
   position: absolute;
   width: 100%;
@@ -190,12 +180,16 @@ header .wrapper {
   letter-spacing: 1px;
 }
 
+#service-nav-container li:hover {
+  cursor: pointer;
+}
+
 .active {
   color: #03aa67 !important;
   font-weight: bold;
 }
 
-#services-container {
+.services-container {
   width: 80%;
   height: 650px;
   margin: 0 auto;
@@ -297,7 +291,7 @@ header .wrapper {
 }
 
 .nav-button:hover {
-  background-color: #00a663;
+  background-color: #00E388;
   cursor: pointer;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
@@ -349,11 +343,11 @@ header .wrapper {
   cursor: pointer;
 }
 
-#about-background {
+.about-background {
   background-color: #F3F3F3;
   width: 100%;
   margin: 0;
-  border-top: 4px solid #03aa67;
+  border-top: 6px solid #03aa67;
 }
 
 #about-container {
@@ -394,12 +388,12 @@ header .wrapper {
 
 /* Clients */
 
-#clients-background {
+.clients-background {
   background-color: #FFF;
   width: 100%;
   margin: 0;
-  border-top: 4px solid #03aa67;
-  border-bottom: 4px solid #03aa67;
+  border-top: 6px solid #03aa67;
+  border-bottom: 6px solid #03aa67;
 }
 
 #clients-container {
@@ -424,7 +418,7 @@ header .wrapper {
 .clientbox {
   width: 30%;
   margin: 0;
-  height: 175px;
+  height: 165px;
   overflow: hidden;
   display: inline-block;
   padding: 5px 5px 0 5px;
@@ -438,7 +432,7 @@ header .wrapper {
 }
 
 span.client-content {
-  background: rgba(3,170,103,0.5);
+  background: rgba(3,170,103,0.6);
   color: white;
   cursor: pointer;
   height: 250px;
@@ -446,7 +440,7 @@ span.client-content {
   left: 0;
   top: 0;
   position: absolute;
-  padding: 10% 0;
+  padding: 20px 0;
   opacity: 0;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
@@ -492,13 +486,13 @@ span.client-content i {
 
 /* Contacts */
 
-#contact-background {
+.contact-background {
   width: 100%;
   height: 560px;
   overflow: hidden;
 }
 
-#contact-background:before {
+.contact-background:before {
   content: " ";
   position: absolute;
   width: 100%;
@@ -562,14 +556,14 @@ span.client-content i {
   background-color: #323232;
   width: 100%;
   margin: 0;
-  height: 80px;
+  height: 100px;
   position: absolute;
 }
 
 #footer-container {
   width: 80%;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 45px;
   text-align: center;
 }
 
@@ -583,26 +577,7 @@ span.client-content i {
 
 /* Anchor Links */
 
-#services-anchor {
+#top {
   position: relative;
   top: -90px;
 }
-
-#clients-anchor {
-  position: relative;
-  top: -90px;
-}
-
-#staff-anchor {
-  position: relative;
-  top: -90px;
-}
-
-#contact-anchor {
-  position: relative;
-  top: -90px;
-}
- #top {
-  position: relative;
-  top: -90px;
- }
