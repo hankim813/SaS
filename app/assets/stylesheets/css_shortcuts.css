@@ -45,3 +45,128 @@ div {
 hr {
   border-top: 1px solid #D8D8D8;
 }
+
+/* Arrow Box */
+
+.arrow_box_1 {
+  position: relative;
+  background: #FFF;
+  border: 8px solid #03aa67;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+.arrow_box_1:after, .arrow_box_1:before {
+  bottom: 100%;
+  left: 10%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box_1:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #FFF;
+  border-width: 30px;
+  margin-left: -30px;
+}
+
+.arrow_box_1:before {
+  border-color: rgba(3, 170, 103, 0);
+  border-bottom-color: #03aa67;
+  border-width: 41px;
+  margin-left: -41px;
+}
+
+.arrow_box_1 h3 {
+  font-family: 'Courgette', cursive;
+  font-size: 2.6em;
+  text-align: center;
+  text-shadow: 1px 1px 1px #E6E6E6;
+}
+
+.arrow_box_2 {
+  position: relative;
+  background: #FFF;
+  border: 8px solid #03aa67;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+.arrow_box_2:after, .arrow_box_2:before {
+  bottom: 100%;
+  left: 48%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box_2:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #FFF;
+  border-width: 30px;
+  margin-left: -30px;
+}
+
+.arrow_box_2:before {
+  border-color: rgba(3, 170, 103, 0);
+  border-bottom-color: #03aa67;
+  border-width: 41px;
+  margin-left: -41px;
+}
+
+.arrow_box_2 h3 {
+  font-family: 'Courgette', cursive;
+  font-size: 2.6em;
+  text-align: center;
+  text-shadow: 1px 1px 1px #E6E6E6;
+}
+
+.arrow_box_3 {
+  position: relative;
+  background: #FFF;
+  border: 8px solid #03aa67;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+.arrow_box_3:after, .arrow_box_3:before {
+  bottom: 100%;
+  left: 88%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box_3:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #FFF;
+  border-width: 30px;
+  margin-left: -30px;
+}
+
+.arrow_box_3:before {
+  border-color: rgba(3, 170, 103, 0);
+  border-bottom-color: #03aa67;
+  border-width: 41px;
+  margin-left: -41px;
+}
+
+.arrow_box_3 h3 {
+  font-family: 'Courgette', cursive;
+  font-size: 2.6em;
+  text-align: center;
+  text-shadow: 1px 1px 1px #E6E6E6;
+}

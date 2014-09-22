@@ -4,6 +4,7 @@
 @import url(http://fonts.googleapis.com/css?family=Cinzel);
 @import url(http://fonts.googleapis.com/css?family=Abel);
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
+@import url(http://fonts.googleapis.com/css?family=Courgette);
 
 
 /* CHANGE FONTS!! and ALL SHADES OF COLOR */
@@ -108,7 +109,7 @@ header .wrapper {
 }
 
 #headline {
-  width: 55%;
+  width: 65%;
   height: 300px;
   margin: 150px auto 0 auto;
   position: relative;
@@ -121,6 +122,7 @@ header .wrapper {
  text-align: center;
  letter-spacing: 3px;
  line-height: 1.5em;
+ font-size: 2.3em;
 }
 
 #headline p {
@@ -302,15 +304,102 @@ header .wrapper {
   -moz-transition: all 0.3s ease-out;
 }
 
+/* About */
+
+#staff-header {
+  text-align: center;
+  padding-top: 40px;
+}
+
+#staff-header h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 40px;
+  position: relative;
+  top: -10px;
+  color: #323232;
+}
+
+#staff-header p {
+  color: #7a7a7a;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5em;
+  font-size: 15px;
+  width: 65%;
+  margin: 0 auto;
+  position: relative;
+  top: -10px;
+}
+
+#staff-header-body {
+  padding-top: 20px;
+  text-align: center;
+}
+
+#staff-header-body h2 {
+  display: inline;
+  font-size: 2em;
+  margin: 3% 5%;
+  text-transform: uppercase;
+}
+
+#staff-header-body h2:hover {
+  transition: all 0.2s ease-out;
+  color: #03aa67;
+  cursor: pointer;
+}
+
+#about-background {
+  background-color: #F3F3F3;
+  width: 100%;
+  margin: 0;
+  border-top: 4px solid #03aa67;
+}
+
+#about-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.employee {
+  margin: 90px 0 100px 0;
+  text-align: left;
+  padding: 0;
+}
+
+.employee img {
+  float: left;
+  display: inline;
+  margin-right: 3%;
+  width: 250px;
+}
+
+.employee h2 {
+  text-transform: uppercase;
+  line-height: 0.7em;
+  font-size: 35px;
+}
+
+.employee h3 {
+  text-transform: uppercase;
+  font-family: 'Abel', sans-serif;
+  line-height: 0.7em;
+  color: #00a663;
+}
+
+.employee p {
+  line-height: 1.6em;
+}
+
 /* Clients */
 
 #clients-background {
-  background-color: #f3f3f3;
+  background-color: #FFF;
   width: 100%;
   margin: 0;
-  height: 600px;
-  border-top: 2px solid #03aa67;
-  border-bottom: 2px solid #03aa67;
+  border-top: 4px solid #03aa67;
+  border-bottom: 4px solid #03aa67;
 }
 
 #clients-container {
@@ -335,10 +424,10 @@ header .wrapper {
 .clientbox {
   width: 30%;
   margin: 0;
-  height: 250px;
+  height: 175px;
   overflow: hidden;
   display: inline-block;
-  padding: 0;
+  padding: 5px 5px 0 5px;
   float: center;
   position: relative;
   z-index: 100;
@@ -349,7 +438,7 @@ header .wrapper {
 }
 
 span.client-content {
-  background: rgba(0,0,0,0.6);
+  background: rgba(3,170,103,0.5);
   color: white;
   cursor: pointer;
   height: 250px;
@@ -401,77 +490,7 @@ span.client-content i {
   transition: all 0.2s ease-out;
 }
 
-/* Staff */
-
-#staff-header {
-  text-align: center;
-  padding-top: 40px;
-}
-
-#staff-header h1 {
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 40px;
-  position: relative;
-  top: -10px;
-  color: #323232;
-}
-
-#staff-header p {
-  color: #7a7a7a;
-  font-family: 'Nunito', sans-serif;
-  line-height: 1.5em;
-  font-size: 15px;
-  width: 65%;
-  margin: 0 auto;
-  position: relative;
-  top: -10px;
-}
-
-#staff-background {
-  background-color: #FFF;
-  width: 100%;
-  margin: 0;
-  height: 600px;
-}
-
-#staff-container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 30px 0;
-}
-
-.employee {
-  margin: 90px 0 100px 0;
-  text-align: left;
-  padding: 0;
-}
-
-.employee img {
-  float: left;
-  display: inline;
-  margin-right: 3%;
-  width: 250px;
-}
-
-.employee h2 {
-  text-transform: uppercase;
-  line-height: 0.7em;
-  font-size: 35px;
-}
-
-.employee h3 {
-  text-transform: uppercase;
-  font-family: 'Abel', sans-serif;
-  line-height: 0.7em;
-  color: #00a663;
-}
-
-.employee p {
-  line-height: 1.6em;
-}
-
-/* Clients */
+/* Contacts */
 
 #contact-background {
   width: 100%;
