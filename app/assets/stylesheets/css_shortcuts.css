@@ -51,10 +51,8 @@ hr {
 .arrow_box_1 {
   position: relative;
   background: #FFF;
-  border: 8px solid #03aa67;
+  border: 5px solid #03aa67;
   padding: 20px;
-  border-radius: 10px;
-
 }
 
 .arrow_box_1:after, .arrow_box_1:before {
@@ -78,8 +76,8 @@ hr {
 .arrow_box_1:before {
   border-color: rgba(3, 170, 103, 0);
   border-bottom-color: #03aa67;
-  border-width: 41px;
-  margin-left: -41px;
+  border-width: 36px;
+  margin-left: -36px;
 }
 
 .arrow_box_1 h3 {
@@ -92,10 +90,8 @@ hr {
 .arrow_box_2 {
   position: relative;
   background: #FFF;
-  border: 8px solid #03aa67;
+  border: 5px solid #03aa67;
   padding: 20px;
-  border-radius: 10px;
-
 }
 
 .arrow_box_2:after, .arrow_box_2:before {
@@ -119,8 +115,8 @@ hr {
 .arrow_box_2:before {
   border-color: rgba(3, 170, 103, 0);
   border-bottom-color: #03aa67;
-  border-width: 41px;
-  margin-left: -41px;
+  border-width: 36px;
+  margin-left: -36px;
 }
 
 .arrow_box_2 h3 {
@@ -133,10 +129,8 @@ hr {
 .arrow_box_3 {
   position: relative;
   background: #FFF;
-  border: 8px solid #03aa67;
+  border: 5px solid #03aa67;
   padding: 20px;
-  border-radius: 10px;
-
 }
 
 .arrow_box_3:after, .arrow_box_3:before {
@@ -160,8 +154,8 @@ hr {
 .arrow_box_3:before {
   border-color: rgba(3, 170, 103, 0);
   border-bottom-color: #03aa67;
-  border-width: 41px;
-  margin-left: -41px;
+  border-width: 36px;
+  margin-left: -36px;
 }
 
 .arrow_box_3 h3 {
