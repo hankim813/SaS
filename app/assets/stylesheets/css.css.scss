@@ -13,7 +13,7 @@
 
 header {
   width: 100%;
-  height: 105px;
+  height: 130px;
   background-color: #FFF;
   position: fixed;
   top: 0;
@@ -26,6 +26,12 @@ header .wrapper {
   margin: 0 auto;
   text-align: center;
   max-width: 1266px;
+}
+
+#tagline {
+  letter-spacing: 1px;
+  font-family: 'Abel', sans-serif;
+  color: #7a7a7a;
 }
 
 .logo {
@@ -364,7 +370,7 @@ header .wrapper {
   float: left;
   display: inline;
   margin-right: 3%;
-  width: 250px;
+  width: 300px;
 }
 
 .employee h2 {
@@ -382,6 +388,12 @@ header .wrapper {
 
 .employee p {
   line-height: 1.6em;
+  color: #7a7a7a;
+}
+
+.quote {
+  font-size: 1.5em;
+  font-family: 'Abel', sans-serif;
 }
 
 /* Clients */
@@ -534,6 +546,11 @@ span.client-content i {
   margin: 0 auto;
   padding-top: 50px;
   text-align: center
+}
+
+#contact-container a:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
 }
 
 #contact-container iframe {
