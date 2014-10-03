@@ -7,6 +7,9 @@ $(document).ready(function() {
     $("#1a").addClass("active");
     $("#2a").removeClass("active");
     $("#3a").removeClass("active");
+    $("#corporate").addClass("hovered");
+    $("#business").removeClass("hovered");
+    $("#startup").removeClass("hovered");
   });
   $("#business").click(function() {
     $("#sec-business").removeClass("hide");
@@ -15,6 +18,9 @@ $(document).ready(function() {
     $("#2a").addClass("active");
     $("#1a").removeClass("active");
     $("#3a").removeClass("active");
+    $("#corporate").removeClass("hovered");
+    $("#business").addClass("hovered");
+    $("#startup").removeClass("hovered");
   });
   $("#startup").click(function() {
     $("#sec-startup").removeClass("hide");
@@ -23,30 +29,9 @@ $(document).ready(function() {
     $("#3a").addClass("active");
     $("#1a").removeClass("active");
     $("#2a").removeClass("active");
-  });
-  $("#1a").click(function() {
-    $("#1a").addClass("active");
-    $("#2a").removeClass("active");
-    $("#3a").removeClass("active");
-    $("#sec-corp").removeClass("hide");
-    $("#sec-business").addClass("hide");
-    $("#sec-startup").addClass("hide");
-  });
-  $("#2a").click(function() {
-    $("#2a").addClass("active");
-    $("#1a").removeClass("active");
-    $("#3a").removeClass("active");
-    $("#sec-business").removeClass("hide");
-    $("#sec-corp").addClass("hide");
-    $("#sec-startup").addClass("hide");
-  });
-  $("#3a").click(function() {
-    $("#3a").addClass("active");
-    $("#2a").removeClass("active");
-    $("#1a").removeClass("active");
-    $("#sec-startup").removeClass("hide");
-    $("#sec-business").addClass("hide");
-    $("#sec-corp").addClass("hide");
+    $("#corporate").removeClass("hovered");
+    $("#business").removeClass("hovered");
+    $("#startup").addClass("hovered");
   });
 });
 
