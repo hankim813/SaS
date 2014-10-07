@@ -611,7 +611,7 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 420px) {
   .wrapper {
     width: 100%;
   }
@@ -621,7 +621,7 @@
 
   .logo {
     height: 115px;
-    left: 5%;
+    left: 0;
     position: relative;
     text-align: center;
     padding-top: 20px;
