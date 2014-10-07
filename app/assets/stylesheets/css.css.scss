@@ -611,7 +611,7 @@
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 375px) {
   .wrapper {
     width: 100%;
   }
@@ -621,7 +621,7 @@
 
   .logo {
     height: 115px;
-    left: 8%;
+    left: 5%;
     position: relative;
     text-align: center;
     padding-top: 20px;
@@ -650,6 +650,7 @@
 
   #navigation a {
     color: inherit;
+    font-size: 0.8em;
     transition: all 0.2s ease-out;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -669,7 +670,7 @@
   #navigation ul li {
     display: inline;
     padding: 5px;
-    margin-right: 10px;
+    margin-right: 0;
     color: #7a7a7a;
     font-size: 1em;
     text-transform: uppercase;
@@ -678,7 +679,7 @@
   }
 
   #headline h1 {
-   font-size: 1.8em;
+   font-size: 1.5em;
   }
 
   #headline {
@@ -704,6 +705,7 @@
     position: relative;
     text-align: center;
     top: -160px;
+    left: -10px;
     z-index: 15;
   }
 
@@ -713,10 +715,10 @@
 
   #service-nav-container li {
     display: inline;
-    margin: 0 3%;
+    margin: 0;
     color: #1C1C1C;
     font-variant: small-caps;
-    font-size: 1em;
+    font-size: 0.9em;
     letter-spacing: 1px;
     display: block;
   }
@@ -767,7 +769,7 @@
   }
 
   .service-highlights-container {
-    width: 35%;
+    width: 40%;
     margin-top: 20px;
     float: right;
   }
@@ -804,7 +806,7 @@
     text-align: center;
     display: block;
     position: relative;
-    top: 50px;
+    top: 0px;
   }
 
   .nav-button {
@@ -831,7 +833,7 @@
   #staff-header h1 {
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 2em;
+    font-size: 1.5em;
     position: relative;
     top: -10px;
     color: #323232;
@@ -855,9 +857,23 @@
 
   #staff-header-body h2 {
     display: inline;
-    font-size: 1em;
-    margin: 3% 1%;
+    font-size: 0.8em;
+    margin: 3% 0.5%;
     text-transform: uppercase;
+  }
+
+  .employee img {
+    width: 100%;
+  }
+
+  .employee h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .employee h3 {
+    font-size: 1.5em;
+    text-align: center;
   }
 
   .about-background {
@@ -879,7 +895,7 @@
     font-size: 40px;
     color: #323232;
     letter-spacing: 5px;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   #clientbox-container {
@@ -923,7 +939,7 @@
   #contact-header h1 {
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 2em;
+    font-size: 1.5em;
     position: relative;
     top: -10px;
     color: #FFF;
@@ -941,7 +957,7 @@
     color: #F2F2F2;
     font-family: 'Abel', sans-serif;
     line-height: 1.5em;
-    font-size: 1.3em;
+    font-size: 1em;
     width: 85%;
     margin: 0 auto;
     position: relative;
@@ -962,12 +978,12 @@
     position: relative;
     z-index: 100;
     border: 2px solid #03aa67 !important;
-    width: 100%;
+    width: 90%;
   }
 
   .contact-background {
     width: 100%;
-    height: 760px;
+    height: 800px;
     overflow: hidden;
   }
 
@@ -975,7 +991,7 @@
     content: " ";
     position: absolute;
     width: 100%;
-    height: 760px;
+    height: 800px;
     background-image: url('nairobi-skyline.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -984,7 +1000,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   #headline h1 {
     font-size: 2.5em;
   }
