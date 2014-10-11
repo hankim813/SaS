@@ -611,7 +611,7 @@
   }
 }
 
-@media only screen and (max-width: 628px) {
+@media only screen and (max-width: 727px) {
   .wrapper {
     width: 100%;
   }
@@ -725,7 +725,7 @@
 
   .services-container {
     width: 80%;
-    height: 750px;
+    height: 700px;
     margin: 0 auto;
     padding-top: 30px;
   }
@@ -811,9 +811,9 @@
 
   .nav-button {
     background-color: #00b86e;
-    width: 225px;
+    width: 200px;
     height: 50px;
-    padding: 15px 40px;
+    padding: 15px 30px;
     overflow: hidden;
     text-align: center;
     margin-right: 10px;
@@ -863,17 +863,19 @@
   }
 
   .employee img {
-    width: 100%;
+    width: 50%;
   }
 
   .employee h2 {
-    text-align: center;
+    text-align: left;
     font-size: 2em;
+    line-height: 1.5em;
   }
 
   .employee h3 {
     font-size: 1.5em;
-    text-align: center;
+    text-align: left;
+    line-height: 1.5em;
   }
 
   .employee p {
@@ -896,6 +898,10 @@
     margin: 0 auto;
     padding: 30px 0;
   }
+
+ .clients-background {
+  padding-bottom: 5%;
+ }
 
   #clients-container h1, #clients-container h2 {
     text-align: center;
@@ -1008,7 +1014,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 728px) {
 
   #headline h1 {
     font-size: 2.5em;
