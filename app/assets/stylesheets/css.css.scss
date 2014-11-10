@@ -106,14 +106,17 @@
   }
 
   #headline {
-    width: 65%;
-    height: 300px;
+    height: 650px;
     margin: 150px auto 0 auto;
     position: relative;
     z-index: 50;
+    display: table-cell;
+    vertical-align: middle;
   }
 
   #headline h1 {
+   width: 65%;
+   margin: 0 auto;
    color: #FFF;
    text-transform: uppercase;
    text-align: center;
@@ -327,7 +330,7 @@
     color: #7a7a7a;
     font-family: Arial, sans-serif;
     line-height: 1.5em;
-    font-size: 15px;
+    font-size: 1.3em;
     width: 65%;
     margin: 0 auto;
     position: relative;
@@ -337,6 +340,8 @@
   #staff-header-body {
     padding-top: 20px;
     text-align: center;
+    width: 85%;
+    margin: 0 auto;
   }
 
   #staff-header-body h2 {
@@ -375,7 +380,7 @@
     float: left;
     display: inline;
     margin-right: 3%;
-    width: 300px;
+    height: 300px;
   }
 
   .employee h2 {
@@ -447,7 +452,7 @@
   }
 
   span.client-content {
-    background: rgba(3,170,103,0.6);
+    background: rgba(3,170,103,0.8);
     color: white;
     cursor: pointer;
     height: 250px;
@@ -478,7 +483,7 @@
 
   span.client-content li {
     margin: 5px 0;
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   span.client-content i {
@@ -843,7 +848,7 @@
     color: #7a7a7a;
     font-family: Arial, sans-serif;
     line-height: 1.5em;
-    font-size: 0.8em;
+    font-size: 1em;
     width: 65%;
     margin: 0 auto;
     position: relative;
@@ -853,6 +858,8 @@
   #staff-header-body {
     padding-top: 20px;
     text-align: center;
+    width: 85%;
+    margin: 0 auto;
   }
 
   #staff-header-body h2 {
@@ -1031,7 +1038,7 @@
   }
 
   #service-nav-container li {
-    font-size: 0.8em;
+    font-size: 1.2em;
     margin: 1%;
   }
 

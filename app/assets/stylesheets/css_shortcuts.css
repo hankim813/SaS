@@ -53,11 +53,13 @@ hr {
   background: #FFF;
   border: 5px solid #03aa67;
   padding: 20px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .arrow_box_1:after, .arrow_box_1:before {
   bottom: 100%;
-  left: 10%;
+  left: 25%;
   border: solid transparent;
   content: " ";
   height: 0;
@@ -92,11 +94,13 @@ hr {
   background: #FFF;
   border: 5px solid #03aa67;
   padding: 20px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .arrow_box_2:after, .arrow_box_2:before {
   bottom: 100%;
-  left: 48%;
+  left: 55%;
   border: solid transparent;
   content: " ";
   height: 0;
@@ -131,11 +135,13 @@ hr {
   background: #FFF;
   border: 5px solid #03aa67;
   padding: 20px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .arrow_box_3:after, .arrow_box_3:before {
   bottom: 100%;
-  left: 88%;
+  left: 80%;
   border: solid transparent;
   content: " ";
   height: 0;
