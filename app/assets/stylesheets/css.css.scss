@@ -174,7 +174,7 @@
     position: relative;
     text-align: center;
     top: -140px;
-    z-index: 15;
+    z-index: 150;
   }
 
   #service-nav-container ul {
@@ -188,6 +188,10 @@
     font-variant: small-caps;
     font-size: 1em;
     letter-spacing: 1px;
+  }
+
+  #service-nav-container a {
+    text-decoration: none;
   }
 
   .active {
@@ -280,6 +284,12 @@
     display: block;
     position: relative;
     top: 50px;
+  }
+
+  .service-navi-container a {
+    display: inline-block;
+    position: relative;
+    top: 80px;
   }
 
   .nav-button {
@@ -513,7 +523,6 @@
 
   .contact-background {
     width: 100%;
-    height: 860px;
     overflow: hidden;
   }
 
@@ -521,7 +530,7 @@
     content: " ";
     position: absolute;
     width: 100%;
-    height: 860px;
+    height: 1000px;
     background-image: url('nairobi-skyline.jpg');
     background-size: cover;
     background-repeat: no-repeat;
